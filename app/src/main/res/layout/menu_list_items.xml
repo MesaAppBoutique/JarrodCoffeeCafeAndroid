@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/guideline15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bagel_sandwiches1" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="98dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="81dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:paddingStart="25dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline16"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline12"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="Bagel Sandwiches" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="323dp" />
+
+            <ImageButton
+                android:id="@+id/go_arrow"
+                style="@style/arrow_style"
+                android:layout_width="50dp"
+                android:layout_height="44dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline16"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_arrow"
+                tools:ignore="SpeakableTextPresentCheck"
+                tools:srcCompat="@drawable/ic_arrow" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jarrod_nav_graph"
+    app:startDestination="@id/jarrodHomeFragment">
+
+    <fragment
+        android:id="@+id/jarrodHomeFragment"
+        android:name="ay.artemis.projects.jarrodcoffeecafe.fragments.JarrodHomeFragment"
+        android:label="fragment_jarrod_home"
+        tools:layout="@layout/fragment_jarrod_home" >
+        <action
+            android:id="@+id/action_jarrodHomeFragment_to_jarrodContactFragment"
+            app:destination="@id/jarrodContactFragment" />
+        <action
+            android:id="@+id/action_jarrodHomeFragment_to_jarrodMenuFragment"
+            app:destination="@id/jarrodMenuFragment" />
+        <action
+            android:id="@+id/action_jarrodHomeFragment_to_jarrodEventFragment"
+            app:destination="@id/jarrodEventFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jarrodContactFragment"
+        android:name="ay.artemis.projects.jarrodcoffeecafe.fragments.JarrodContactFragment"
+        android:label="fragment_jarrod_contact"
+        tools:layout="@layout/fragment_jarrod_contact" />
+    <fragment
+        android:id="@+id/jarrodDetailFragment"
+        android:name="ay.artemis.projects.jarrodcoffeecafe.fragments.JarrodDetailFragment"
+        android:label="fragment_jarrod_detail"
+        tools:layout="@layout/fragment_jarrod_detail" >
+        <action
+            android:id="@+id/action_jarrodDetailFragment_to_jarrodHomeFragment"
+            app:destination="@id/jarrodHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jarrodMenuFragment"
+        android:name="ay.artemis.projects.jarrodcoffeecafe.fragments.JarrodMenuFragment"
+        android:label="fragment_jarrod_menu"
+        tools:layout="@layout/fragment_jarrod_menu" >
+        <action
+            android:id="@+id/action_jarrodMenuFragment_to_jarrodInnerMenu"
+            app:destination="@id/jarrodInnerMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/jarrodInnerMenu"
+        android:name="ay.artemis.projects.jarrodcoffeecafe.fragments.JarrodInnerMenu"
+        android:label="fragment_jarrod_inner_menu"
+        tools:layout="@layout/fragment_jarrod_inner_menu" >
+        <action
+            android:id="@+id/action_jarrodInnerMenu_to_jarrodDetailFragment"
+            app:destination="@id/jarrodDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jarrodEventFragment"
+        android:name="ay.artemis.projects.jarrodcoffeecafe.fragments.JarrodEventFragment"
+        android:label="fragment_jarrod_event"
+        tools:layout="@layout/fragment_jarrod_event" />
+</navigation>

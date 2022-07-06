@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="arrow_style" parent="Widget.AppCompat.ImageButton">
+        <item name="android:backgroundTint">#00FFFFFF</item>
+        <item name="android:tint">#352E2E</item>
+        <item name="android:foregroundTint">#352E2E</item>
+    </style>
+</resources>

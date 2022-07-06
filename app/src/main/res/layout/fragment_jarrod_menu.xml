@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.JarrodMenuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/jarrod_bkg"
+        android:textColor="@color/white"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jarrod_coffee_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline18"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/jarrodButton"
+                    android:layout_width="132dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/jarrod_button"
+                    android:text="@string/home_label"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/jarrodButton"
+                    android:layout_width="132dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/jarrod_button"
+                    android:text="@string/events_label"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    style="@style/jarrodButton"
+                    android:layout_width="132dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/jarrod_button"
+                    android:text="@string/contact_label"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="222dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline17"
+                tools:listitem="@layout/menu_list_items" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="205dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

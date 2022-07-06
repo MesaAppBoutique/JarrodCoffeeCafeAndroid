@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.JarrodCoffeeCafe" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/jarrod_bkg</item>
+        <item name="colorPrimaryVariant">@color/jarrod_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/jarrod_lighter_bkg</item>
+        <item name="colorSecondaryVariant">@color/jarrod_lighter_red</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

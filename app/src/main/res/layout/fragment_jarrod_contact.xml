@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.JarrodContactFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/jarrod_bkg"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/guideline14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline19">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    style="@style/jarrodButton"
+                    android:background="@drawable/jarrod_button"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="0dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/email_label"
+                    app:drawableStartCompat="@drawable/ic_email_two" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/jarrodButton"
+                    android:background="@drawable/jarrod_button"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/phone_number"
+                    app:drawableStartCompat="@drawable/ic_phone_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline14">
+
+                <TextView
+                    android:id="@+id/followTV"
+                    android:layout_width="303dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/follow_text"
+                    android:textColor="@color/white" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:drawableEnd="@drawable/ic_facebook_logo"
+                        android:text="@string/face_label"
+                        android:textAllCaps="false"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        android:drawableEnd="@drawable/ic_instagram_logo"
+                        android:text="@string/insta_label"
+                        android:textAllCaps="false"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/guideline14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline11">
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="157dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/hour_heading"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="116dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/hours"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="163dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="@string/location_heading"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/location"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        style="@style/jarrodButton"
+                        android:layout_width="117dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/jarrod_button"
+                        android:text="@string/map_label"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/guideline11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline9">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="366dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/content_desc"
+                    android:src="@drawable/jarrod_coffee_map_fixed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/contact_home_btn"
+                    style="@style/jarrodButton"
+                    android:layout_width="132dp"
+                    android:layout_height="38dp"
+                    android:background="@drawable/jarrod_button"
+                    android:text="@string/home_label"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/contact_menu_btn"
+                    style="@style/jarrodButton"
+                    android:layout_width="132dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/jarrod_button"
+                    android:text="@string/menu_label"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/contact_events_btn"
+                    style="@style/jarrodButton"
+                    android:layout_width="132dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/jarrod_button"
+                    android:text="@string/events_label"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/guideline9"
+                app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content_desc"
+                    android:src="@drawable/jarrod_coffee_logo" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="158dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="205dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="355dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="681dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="579dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="507dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</layout>
