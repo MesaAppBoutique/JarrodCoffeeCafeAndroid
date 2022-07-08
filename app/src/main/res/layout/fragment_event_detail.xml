@@ -10,6 +10,7 @@
 
         <!-- Currently don't know what the event detail looks like. -->
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

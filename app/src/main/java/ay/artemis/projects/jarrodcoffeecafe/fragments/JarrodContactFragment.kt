@@ -9,11 +9,11 @@ import ay.artemis.projects.jarrodcoffeecafe.R
 
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [JarrodContactFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+/*
+* This fragment is for contact us screen.
+* adding a onViewCreated to bind the xml layout for databinding purposes.
+* adding the navigation with using the action part of fragment navigation.
+* */
 class JarrodContactFragment : Fragment() {
 
 

@@ -10,6 +10,7 @@ import ay.artemis.projects.jarrodcoffeecafe.R
 
 class EventDetailFragment : Fragment() {
 
+    /*  Plan on adding important navigation controls to this, and adapters for the recycle view  */
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

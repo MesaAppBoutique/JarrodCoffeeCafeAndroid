@@ -4,6 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".fragments.JarrodContactFragment">
 
+    <!--
+    This is where I add the data tag.
+    <data>
+        <var name="mainContact"
+            type="some package name"
+    </data>
+
+    Hiding the action bar
+
+
+    -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

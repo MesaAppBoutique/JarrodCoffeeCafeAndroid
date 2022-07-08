@@ -3,6 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!-- this is where the variables for event items.
+        e.g.
+       <data>
+            <variable
+                name="eventItems"
+                type="package name" />
+        </data>
+    -->
+
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <!-- the text will be the name of the event from the database. -->
 
             <TextView
                 android:id="@+id/event_name_TV"
@@ -79,7 +90,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline26"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_arrow" />
+                app:srcCompat="@drawable/ic_arrow"
+                android:contentDescription="@string/event_content_description"
+                />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
