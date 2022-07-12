@@ -25,11 +25,13 @@
 
     <string name="coffee_title">House Coffee</string>
 
-    <!-- temp string for things  -->
+    <!-- temp string for menu items  -->
     <string name="temp_number">12 oz</string>
     <string name="tempe_price">$2.50</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- temp strings for event items -->
+    <string name="temp_date">08 /n 25 /n 2022</string>
+    <string name="temp_event_name">Some Event</string>
 
     <string name="temporary_text_event">Some Event Name</string>
     <string name="temporary_date_time_text">01/24/2022 &#8211; 5:00 p.m.</string>
